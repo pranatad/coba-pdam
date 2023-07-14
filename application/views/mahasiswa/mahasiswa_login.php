@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,15 +9,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SISPENSI | 2019 Skripsi UTS</title>
+  <title>PKL-Perumda Tugu Tirta</title>
 
   <!-- Custom fonts for this template-->
-  <link href="<?php echo base_url()?>assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo base_url() ?>assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url()?> assets/css/login-style.css">
-   <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?> assets/css/login-style.css">
+  <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.min.css">
-    <!-- Font Awesome -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/fontawesome5/css/fontawesome.min.css">
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/fontawesome5/css/fontawesome.css">
   <link rel="shortcut icon" href="<?php echo base_url() ?>assets/img/logo.jpg">
@@ -28,7 +27,8 @@
 
 </head>
 
-<body style="background-image: url('https://cdn.csu.edu.au/__data/assets/image/0006/2875965/M_Inclusive_Education_Banner_01.jpg'); background-size: cover">
+<body style="background-color: #0F77AD; background-image: url('https://cdn.csu.edu.au/__data/assets/image/0006/2875965/M_Inclusive_Education_Banner_01.jpg'); background-size: cover">
+
 
   <div class="container"><br><br><br>
 
@@ -42,40 +42,41 @@
             <!-- Nested Row within Card Body -->
             <div class="row">
               <div class="col-lg-12">
-                <div class="p-5">
-                  <div class="text-center">
+                <div class="p-5" style="background-color: #95DBFF;">
+                  <div class=" text-center">
 
-                    <h1 class="h4 text-gray-900 mb-4">Login Mahasiswa</h1>
-                    
+                    <div class="text-center">
+                      <img src="https://perumdatugutirta.co.id/public/images/logo@2x.png" alt="Logo" style="width: 200px;">
+                    </div>
+
                     <!-- <?php echo $this->session->flashdata('pesan') ?> -->
                   </div>
-                  <form method="post" action="<?php echo base_url('lagihmasuk')?>" class="user">
+                  <form method="post" action="<?php echo base_url('lagihmasuk') ?>" class="user">
                     <div class="form-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                       <input type="text" class="form-control" id="username" placeholder="Username" name="username" required>
-                      <?php echo form_error('username', '<div class="text-danger small ml-3">','</div>')?>
+                      <?php echo form_error('username', '<div class="text-danger small ml-3">', '</div>') ?>
                     </div>
                     <div class="form-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                       <input type="password" class="form-control" id="password" placeholder="Password" name="password" required><i class="glyphicon glyphicon-lock"></i>
-                       <?php echo form_error('password', '<div class="text-danger small ml-3">','</div>')?>
+                      <?php echo form_error('password', '<div class="text-danger small ml-3">', '</div>') ?>
                     </div>
                     <br>
-                    <div class="col-xs-4">
-                        <button type="submit" name="login" class="btn btn-primary btn-block">Login</button>
+                    <div class="col-xs-4 text-right">
+                      <span style="display: inline-block; margin-left: 10px; margin-right:10px">
+                        <a href="<?php echo base_url('mahasiswa/register'); ?>" style="text-decoration: underline;">Daftar</a>
+                      </span>
+                      <button type="submit" name="login" class="btn btn-success btn-sm">Login</button>
+
                     </div>
 
                     <br><br>
                     <div class="text-center">
-                      Belum Punya Akun? 
-                      <a href="<?php echo base_url('mahasiswa/register'); ?>" class="text-center" style="text-decoration: none;">Daftar Baru</a><br>
+                      Kembali ke
+                      <a href="https://perumdatugutirta.co.id/" class="text-center" style="text-decoration: none;">Beranda</a><br>
                     </div>
-                    <br>
-                    <div class="text-center">
-                      Kembali ke 
-                      <a href="<?php echo base_url('welcome'); ?>" class="text-center" style="text-decoration: none;">Beranda</a><br>
-                    </div>
-                    
+
                   </form>
 
                 </div>
